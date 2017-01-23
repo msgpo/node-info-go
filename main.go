@@ -84,12 +84,12 @@ func buildRoute(line string) Route {
 	return route
 }
 
-func mapRoutes(routeaArr []*Route) *RouteMap {
+func mapRoutes(routeArr []*Route) *RouteMap {
 	rtm := &RouteMap{
 		Interfaces: make(map[string]*Interface),
 	}
 
-	for _, route := range routeaArr {
+	for _, route := range routeArr {
 		if rtm.Interfaces[route.Interface] == nil {
 			rtm.Interfaces[route.Interface] = &Interface{
 				Neighbors: make(map[string]*Neighbor),
