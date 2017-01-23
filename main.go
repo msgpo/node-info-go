@@ -1,5 +1,6 @@
 package main
 
+// Start with:
 // default via 10.0.0.3 dev eth0  proto babel onlink
 // 10.0.0.1 via 10.0.0.3 dev eth0  proto babel onlink
 // 10.0.0.2 via 10.0.0.2 dev eth0  proto babel onlink
